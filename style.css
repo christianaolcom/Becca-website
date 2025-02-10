@@ -7,9 +7,14 @@
 html,body{
     overflow-x: hidden;
 }
-nav{
+
+header {
     position: fixed;
+    top:0;
+    left: 0;
     width: 100%;
+    z-index: 1;
+    margin-top: -10px;
 }
 
 ul{
@@ -33,29 +38,16 @@ li a:hover{
     color: rgb(238, 36, 36);
 }
 
-/* #bling {
-    background-image: url(img/BG.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+#home {
+    color: #040d31;
+    font-size: 1rem;
+    font-weight: bold;
+}
 
-/* #bling {
-    background-image: url(img/BG.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: auto; 
-    min-height: 500px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+#home:hover{
+    color: blue;
+}
+
 
 
 #same {
@@ -76,8 +68,6 @@ li a:hover{
 
 }
 
-
-
 #serve a {
     color: #040d31; 
     text-decoration: none;
@@ -88,11 +78,32 @@ li a:hover{
     scroll-behavior: smooth;
 }
 
+#about a {
+    color: #040d31;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
 
+#about {
+    scroll-behavior: smooth;
+}
 
+#trans {
+    position: relative;
+    overflow: hidden;
+}
 
+#trans {
+    transform: transform 2s ease-in-out;
+    transition-timing-function: 4s;
+    cursor: pointer;
+    background-color: #040d31;
+}
 
-
+#trans:hover  {
+    transform: scale(1.1);
+    background-color: rgb(7, 7, 151);
+}
 
 
 
